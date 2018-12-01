@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>	
+    <title>Umrechnung von Kilometer in Meilen mit jQM</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> 
+    <script src="meinCode.js"></script>    
+</head>
+<body>
+
+  <div data-role="page" id="haupseite">
+  
+    <div data-role="header">
+      <h1>Kilometer in Meilen</h1>
+    </div>
+    
+    <div class="ui-content" role="main">
+        <form>
+            <label for="inputKilometer">Kilometer:</label>
+            <input id="inputKilometer" value="10" type="number" >
+        
+            <p>Umrechnen in ...</p>
+            <select id="inputZieleinheit">
+              <option value="MeileEnglisch"   >Englische Meilen   (1.609,344 Meter)</option>
+              <option value="MeileNautisch"   >Nautische Meilen   (1.852 Meter)</option>
+              <option value="MeileChinesisch" >Chinesische Meilen (Li, 500 Meter)</option>
+            </select>            
+        </form>
+        <p></p>
+        
+        <button id="buttonBerechnen" class="ui-btn ui-corner-all ui-btn-inline">Umrechnen</button>
+        <p></p>
+        
+        <h3 id="ergebnis">&nbsp;</h3> <!-- Leerzeichen, um Fehler "Leeres h3-Element" zu beheben -->
+    </div>
+
+    <div data-role="footer">
+      <h4>2018 by M.D., powered by jQuery Mobile (jQM)</h4>
+    </div>            
+        
+  </div>
+    
+</body>
