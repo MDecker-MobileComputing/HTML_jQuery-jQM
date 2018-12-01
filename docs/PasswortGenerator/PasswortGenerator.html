@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>	
+    <title>Passwort-Generator</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> 
+    <script src="meinCode.js"></script>    
+</head>
+<body>
+
+  <div data-role="page" id="haupseite">
+
+    <div data-role="header">
+      <h1>Passwort-Generator</h1>
+    </div>
+
+    <div class="ui-content" data-role="main">    
+        <form>
+            <fieldset data-role="controlgroup">
+                <legend>Zeichenvorrat:</legend>
+
+                <input name="radiogruppe_1" id="radiogruppe_1a" value="buchstaben" checked="checked" type="radio">
+                <label for="radiogruppe_1a">Nur Buchstaben</label>
+
+                <input name="radiogruppe_1" id="radiogruppe_1b" value="buchstabenUndZahlen" type="radio">
+                <label for="radiogruppe_1b">Buchstaben und Zahlen</label>
+
+                <input name="radiogruppe_1" id="radiogruppe_1c" value="alleZeichen" type="radio">
+                <label for="radiogruppe_1c">Buchstaben, Zahlen und Symbole</label>
+
+            </fieldset>
+            <p></p>
+
+            <label for="sliderAnzahlZeichen">Anzahl Zeichen (mindestens 8, höchstens 25):</label>
+            <input id="sliderAnzahlZeichen" min="8" max="25" value="15" type="range">
+
+        </form>
+        <p></p>
+
+        <button id="buttonPasswordErzeugen" class="ui-btn ui-corner-all ui-btn-inline">Erzeuge Passwort</button>
+        <p></p>
+                
+        <form>
+            <label for="textareaPasswort">Passwort:</label>
+            <textarea id="textareaPasswort" readonly="readonly"></textarea>
+        </form>
+
+    </div>
+    
+    
+    <div data-role="footer">
+      <h4>2018 by M.D., powered by jQuery Mobile (jQM)</h4>
+    </div>
+    
+  </div>
+
+</body>
