@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>	
+    <title>Dynamische Liste mit jQM</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> 
+    <script src="meinCode.js"></script>    
+</head>
+<body>
+
+  <div data-role="page" id="haupseite">
+  
+    <div data-role="header">
+        <h1>Dynamische Liste mit jQM</h1>
+    </div>
+    
+    <div class="ui-content" data-role="main">
+    
+        <ul data-role="listview" id="dieListe" data-inset="true" data-filter="true">
+        </ul>
+        <p></p>
+
+        <form>
+            <input id="inputName" value="" type="text" placeholder="Neuer Listeneintrag" data-clear-btn="true">
+        </form>
+        <button id="buttonGruss" class="ui-btn ui-corner-all ui-btn-inline">In Liste eintragen</button>
+        <p></p>
+        
+        <button id="buttonLoeschen" class="ui-btn ui-corner-all ui-btn-inline">Obersten Eintrag löschen</button>
+
+    </div><!-- main -->
+
+    <div data-role="footer">
+        <h4>2017 by M.D., powered by jQuery Mobile (jQM)</h4>
+    </div>
+    
+  </div><!-- hauptseite -->
+    
+</body>

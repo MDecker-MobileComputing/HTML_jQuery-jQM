@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>	
+    <title>"Hallo Name" mit jQM</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> 
+    <script src="meinCode.js"></script>    
+</head>
+<body>
+
+  <div data-role="page" id="haupseite">
+  
+    <div data-role="header">
+      <h1>"Hallo Name" mit jQM</h1>
+    </div>
+
+    <div class="ui-content" data-role="main">
+        <form>
+            <label for="inputName">Bitte Name eingeben:</label>
+            <input id="inputName" value="" type="text" placeholder="Vorname" data-clear-btn="true">
+        </form>
+        <button id="buttonGruss" class="ui-btn ui-corner-all ui-btn-inline">Begrüße mich</button>
+    </div>
+
+    <div data-role="footer">
+      <h4>2017 by M.D., powered by jQuery Mobile (jQM)</h4>
+    </div>
+    
+    <!-- Popup für Fehlermeldungen; muss "in" der Page definiert sein, von der aus es evtl. aufgerufen wird. -->
+    <div data-role="popup" id="popupDialogFehler_leereEingabe">
+      <div data-role="header">
+        <h1>Fehler</h1>
+      </div>
+      <div class="ui-content" data-role="main">
+        <p>Es wurde kein Name eingegeben.</p>
+      </div>
+    </div>        
+
+  </div><!-- hauptseite -->
+
+
+  <div data-role="page" id="ergebnisSeite">
+    <div data-role="header">
+      <a href="#" data-rel="back">Zurück</a>
+      <h1>Ergebnis-Seite</h1>
+    </div>
+    
+    <div class="ui-content" data-role="main">
+      <h1 id="ergebnis">&nbsp;</h1>
+    </div>
+    
+    <div data-role="footer">
+      <h4>2017 by M.D., powered by jQuery Mobile (jQM)</h4>
+    </div>    
+
+  </div><!-- ergebnisSeite -->
+    
+</body>
