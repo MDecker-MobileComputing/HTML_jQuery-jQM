@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>	
+    <title>Zufallszahl aus Wertebereich</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> 
+    <script src="meinCode.js"></script>    
+</head>
+<body>
+
+  <div data-role="page" id="haupseite">
+  
+    <div data-role="header">
+      <h1>Differenz von Rangeslider</h1> 
+    </div>
+
+    <div class="ui-content" data-role="main">
+        <form>
+            <div data-role="rangeslider">
+                <label for="meinRangeslider_a">Rangeslider:</label>
+                <input id="meinRangeslider_a" min="0" max="100" value="10" type="range">
+                <input id="meinRangeslider_b" min="0" max="100" value="90" type="range">
+            </div>
+        </form>
+        <button id="button-1" class="ui-btn ui-btn-inline">Differenz ausrechnen</button>
+    </div>
+
+    <div data-role="footer">
+      <h4>2018 by M.D., powered by jQuery Mobile (jQM)</h4>
+    </div>
+
+  </div>
+
+</body>
