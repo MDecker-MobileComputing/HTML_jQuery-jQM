@@ -1,4 +1,5 @@
 
 File to disable Jekyll build of GitHub pages (the pages of this repository do NOT use Jekyll).
+A unnecessary Jekyll build might fail and prevent this site from getting published.
 
 see also: https://blog.github.com/2009-12-29-bypassing-jekyll-on-github-pages/
