@@ -1,7 +1,7 @@
 
 /* This file is licensed under the terms of the BSD 3-Clause License. */
 
-function buttonEventHandler() {
+function buttonEventHandler() { "use strict";
 
     const kleinererWertString  = $("#meinRangeslider_a").val();
     const groessererWertString = $("#meinRangeslider_b").val();
@@ -14,7 +14,7 @@ function buttonEventHandler() {
 }
 
 
-function onSeiteGeladen() {
+function onSeiteGeladen() { "use strict";
 
     $("#button-1").click( buttonEventHandler );
 }

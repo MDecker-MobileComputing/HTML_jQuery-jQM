@@ -64,6 +64,7 @@ function onButtonErzeugePasswort() { "use strict";
  * zur Verfügung stehen.
  */
 function onSeiteGeladen() { "use strict";
+
     $("#buttonPasswordErzeugen").click( onButtonErzeugePasswort );
 }
 

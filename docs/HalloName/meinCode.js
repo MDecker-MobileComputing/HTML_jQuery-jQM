@@ -4,7 +4,8 @@
 /*
  * Event-Handler für Button
  */
-function sageHallo() {
+function sageHallo() { "use strict";
+
     let nameEingegeben = $("#inputName").val();
     
     nameEingegeben = nameEingegeben.trim();
@@ -30,7 +31,8 @@ function sageHallo() {
  * Event-Handler-Funktion; wird ausgeführt, wenn Seite
  * komplett geladen.
  */
-function onSeiteGeladen() {
+function onSeiteGeladen() { "use strict";
+
     $("#buttonGruss").attr("onclick", "sageHallo();");
 }
 

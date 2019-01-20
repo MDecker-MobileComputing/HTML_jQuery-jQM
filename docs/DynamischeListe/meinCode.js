@@ -9,7 +9,7 @@
  * Methode "prepend()" von jQuery-Objekt  : http://api.jquery.com/prepend/
  * Methode "refresh()" von Listview-Widget: http://api.jquerymobile.com/listview/#method-refresh
  */
-function trageInListeEin(eintragString) {
+function trageInListeEin(eintragString) { "use strict";
        
     const liElement = `<li>${eintragString}</li>`;
     $("#dieListe").append(liElement);    // am Ende der Liste einfügen
@@ -25,7 +25,8 @@ function trageInListeEin(eintragString) {
  *
  * Methode "val()" von jQuery-Objekt: http://api.jquery.com/val/
  */
-function onButtonNeuerListeneintrag() {
+function onButtonNeuerListeneintrag() { "use strict";
+
     const neuerEintrag = $("#inputName").val();
     trageInListeEin(neuerEintrag);
     
@@ -46,7 +47,7 @@ function onButtonNeuerListeneintrag() {
  * Für Kurzfassung:
  * jQuery-Selektor ":first-Child": http://api.jquery.com/first-child-selector/
  */
-function onButtonLoescheListeneintrag() {
+function onButtonLoescheListeneintrag() { "use strict";
 
     const listenElemente = $("#dieListe > li"); // ">" ist Child-Selektor
     const anzahl = listenElemente.length;
@@ -69,7 +70,7 @@ function onButtonLoescheListeneintrag() {
  *
  * Methode "attr()" von jQuery-Objekt: http://api.jquery.com/attr/
  */
-function onSeiteGeladen() {
+function onSeiteGeladen() { "use strict";
 
     $("#buttonGruss"   ).click( onButtonNeuerListeneintrag   );
     $("#buttonLoeschen").click( onButtonLoescheListeneintrag );
