@@ -2,8 +2,7 @@
 /* This file is licensed under the terms of the BSD 3-Clause License. */
 
 /*
- * Fügt der Liste ein neues Element (String-Eintrag) 
- * hinzu.
+ * Fügt der Liste ein neues Element (String-Eintrag) hinzu.
  *
  * Methode "append()"  von jQuery-Objekt  : http://api.jquery.com/append/
  * Methode "prepend()" von jQuery-Objekt  : http://api.jquery.com/prepend/
@@ -11,7 +10,11 @@
  */
 function trageInListeEin(eintragString) { "use strict";
        
-    const liElement = `<li>${eintragString}</li>`;
+    const liElement = $(`<li>${eintragString}</li>`);
+    const eventHandlerFunktion = function() { 
+        alert(`Geklickt auf "` + eintragString + `".`); 
+    };
+    liElement.on("click", eventHandlerFunktion);
     $("#dieListe").append(liElement);    // am Ende der Liste einfügen
     //$("#dieListe").prepend(liElement); // am Beginn der Liste einfügen
     $("#dieListe").listview("refresh");
